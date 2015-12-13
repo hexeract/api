@@ -15,6 +15,6 @@ var Scripts = require('./scripts.model');
 exports.index = function(req, res) {
   Scripts.find(function (err, scripts) {
     if(err) { return handleError(res, err); }
-    return res.status(200).json({ data: scripts });
+    return res.status(200).json({ data: scripts  });
   });
 };

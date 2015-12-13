@@ -15,6 +15,6 @@ var Themes = require('./themes.model');
 exports.index = function(req, res) {
   Themes.find(function (err, themes) {
     if(err) { return handleError(res, err); }
-    return res.status(200).json({ data: themes });
+    return res.status(200).json({ data: themes  });
   });
 };
